@@ -111,7 +111,7 @@ position: absolute;
 top: 0;
 right: 0;
 margin-top: 8rem;
-margin-right: 13rem;
+margin-right: 11rem;
 }
 .custom-separator {
     width: 100%; 
@@ -202,6 +202,7 @@ margin-right: 13rem;
 }
 .social-icons {
     display: flex;
+    gap: 25px;
 }
 .social-icons a:first-child {
     margin-right: 3px; /* Compensation pour l'espace entre les éléments */
@@ -209,4 +210,50 @@ margin-right: 13rem;
 
 .social-icons a {
     display: block;
+}
+.moi p {
+    display: none; /* Pour cacher les classes au départ */
+}
+/* CSS pour la classe disponibilite */
+.disponibilite {
+    opacity: 0; /* Opacité initial à 0 pour que la classe ne soit pas visible */
+    transition: opacity 0.5s ease; /* Transition de l'opacité sur une durée de 0.5s avec une fonction d'accélération */
+}
+
+/* CSS pour afficher la classe disponibilite */
+.disponibilite.active {
+    opacity: 1; /* Opacité à 1 pour afficher la classe */
+}
+
+/* CSS pour les SVG */
+.svg1,
+.svg2,
+.svg3,
+.svg4,
+.svg5,
+.svg6 {
+    opacity: 0; /* Opacité initial à 0 pour que les SVG ne soient pas visibles */
+    animation: fadeIn 0.5s ease forwards; /* Animation de fondu en entrée avec un délai pour chaque SVG */
+}
+
+/* Animation de fondu en entrée */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Décalage vers le bas pour l'effet d'entrée */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation de fondu en sortie */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }

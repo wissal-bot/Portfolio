@@ -25,7 +25,8 @@ Encore
     .addEntry('nextslide', './assets/nextslide.js')  
     .addEntry('opacity', './assets/opacity.js')
     .addEntry('slide', './assets/slide.js')
-    .addEntry('projects', './assets/projects.js') 
+    .addEntry('projects', './assets/projects.js')
+    .addEntry('presentation', './assets/presentation.js') 
     // enables the Symfony UX Stimulus bridge (used in assets/bootstrap.js)
     .enableStimulusBridge('./assets/controllers.json')
 
