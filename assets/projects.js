@@ -8,3 +8,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     modal.addEventListener('click', toggleModal);
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const h6Element = document.getElementById('clickable');
+
+    h6Element.addEventListener('click', function() {
+        h6Element.style.display = 'none'; // Masquer l'élément lorsque vous cliquez dessus
+    });
+});
