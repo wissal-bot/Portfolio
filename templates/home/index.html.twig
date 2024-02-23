@@ -1,0 +1,109 @@
+{% block stylesheets %}
+    {{ encore_entry_link_tags('app') }}
+{% endblock %}
+
+{% block title %} 
+    <nav>
+        <ul>
+<svg class='svg-nav' width="800" height="800" id="Layer_1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g><g><line style="fill:none;stroke:#2F3435;stroke-width:16;stroke-linecap:square;stroke-miterlimit:10;" x1="34.033" x2="8.566" y1="89.467" y2="64"/><line style="fill:none;stroke:#2F3435;stroke-width:16;stroke-linecap:square;stroke-miterlimit:10;" x1="8.566" x2="34.033" y1="64" y2="38.533"/></g><g><line style="fill:none;stroke:#2F3435;stroke-width:16;stroke-linecap:square;stroke-miterlimit:10;" x1="93.967" x2="119.434" y1="38.533" y2="64"/><line style="fill:none;stroke:#2F3435;stroke-width:16;stroke-linecap:square;stroke-miterlimit:10;" x1="119.434" x2="93.967" y1="64" y2="89.467"/></g></g><line style="fill:none;stroke:#2F3435;stroke-width:16;stroke-linecap:square;stroke-miterlimit:10;" x1="42" x2="87.561" y1="105.621" y2="22.379"/></g></svg>
+            <li><a href="{{ path('home') }}" class="text-light">About me</a></li>
+            <li><a href="{{ path('home') }}" class="text-light">Projects</a></li>
+            <li><a href="{{ path('home') }}" class="text-light">Cv</a></li>
+        </ul>
+    </nav>
+{% endblock %}
+
+{% block content %}
+<section class='about background-image'>
+    <div class='presentation'>
+<div class='about-me'>
+    <h2>ABOUT ME</h2>
+    <div id='texte-reduit'>
+        <p>Discover me and my journey in a flash! This quick overview will help you get to know me better and understand what drives my passion. Ready to embark on this adventure ?</p>
+        <a class="learnmore" href="#" id="lien-afficher">Learn more</a> 
+    </div>
+    <div id="texte-complet" class="modal-about">
+        <div class="modal-content-about">
+            <span class="close-about">&times;</span>
+            <p>Allow me to share a part of my journey with you. I am Wissal Kerkour, and my story is a constant exploration of passion and discovery. My path began with numbers, delving into the world of accounting, where every transaction told a financial story. Yet, despite meticulous calculations and careful analysis, I felt that something was missing, an element of personal expression and creativity. That's when I turned to human resources, where every human interaction was an opportunity for connection and understanding. However, despite the importance of interpersonal relationships, a part of me remained unsatisfied, a silent urge towards something deeper.
+            After my experience in HR, I decided to take a break, to step back and reflect on and explore my true passions. That's when the idea of diving into the world of coding was born. A sabbatical year, a journey into the unknown, in pursuit of a long-buried dream.
+            And guess what? I found much more than I had imagined. Coding wasn't just a series of lines of code, but an infinite language of expression, a symphony of logic and creativity. Each problem solved, each project completed, was an affirmation of my creative power.
+            Today, I am convinced that computer science is much more than just a profession for me. It's a burning passion, an obsession with exploration and creation. Coding is not just a technical skill, but a path to self-expression and realizing one's potential.
+            I firmly believe that my journey, filled with challenges overcome and dreams realized, makes me a unique individual. I am grateful for every step of this journey, as they have all led me to this present moment, to this deep understanding of my true passion.
+            Thank you for listening, for allowing me to share a fragment of my story. I am excited to see where this journey will take us.
+            Best wishes</p>
+        </div>
+    </div>
+        <div class="overlay-about"></div>
+</div>
+                <div class="separator"></div>
+                <div class="custom-separator"></div>
+        <a name="my-work"></a>
+<div class='my-work'>
+    <h2>MY WORK</h2>
+    <p>Discover the array of exciting projects accomplished since the beginning of my incredible journey!</p>
+    <a href="#" class="bouton-slide">Learn more</a>
+    <div class="separator"></div>
+    <div class="custom-separator"></div>
+</div>
+
+<section id="section-suivante" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="cirkat">
+            <h3 class="hover-trigger">Cirkat</h3>
+            <p class="hidden">Présentation et techno utilisées bdgcjdgds dgcbdgsjd gdgcjcy</p>
+             <div class="social-icons">
+                <a class="hidden" href="https://github.com/wissal-bot/Cirkat-Project-1"><?xml version="1.0" ?><svg enable-background="new 0 0 128 128" id="Social_Icons" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="_x31__stroke"><g id="Github_1_"><rect clip-rule="evenodd" fill="none" fill-rule="evenodd" height="128" width="128"/><path clip-rule="evenodd" d="M63.996,1.333C28.656,1.333,0,30.099,0,65.591    c0,28.384,18.336,52.467,43.772,60.965c3.2,0.59,4.368-1.394,4.368-3.096c0-1.526-0.056-5.566-0.088-10.927    c-17.804,3.883-21.56-8.614-21.56-8.614c-2.908-7.421-7.104-9.397-7.104-9.397c-5.812-3.988,0.44-3.907,0.44-3.907    c6.42,0.454,9.8,6.622,9.8,6.622c5.712,9.819,14.98,6.984,18.628,5.337c0.58-4.152,2.236-6.984,4.064-8.59    c-14.212-1.622-29.152-7.132-29.152-31.753c0-7.016,2.492-12.75,6.588-17.244c-0.66-1.626-2.856-8.156,0.624-17.003    c0,0,5.376-1.727,17.6,6.586c5.108-1.426,10.58-2.136,16.024-2.165c5.436,0.028,10.912,0.739,16.024,2.165    c12.216-8.313,17.58-6.586,17.58-6.586c3.492,8.847,1.296,15.377,0.636,17.003c4.104,4.494,6.58,10.228,6.58,17.244    c0,24.681-14.964,30.115-29.22,31.705c2.296,1.984,4.344,5.903,4.344,11.899c0,8.59-0.08,15.517-0.08,17.626    c0,1.719,1.152,3.719,4.4,3.088C109.68,118.034,128,93.967,128,65.591C128,30.099,99.344,1.333,63.996,1.333" fill="#3E75C3" fill-rule="evenodd" id="Github"/></g></g></svg></a>
+                <a class="hidden" href="https://wissal-bot.github.io/Cirkat-Project-1/"><?xml version="1.0" ?><svg data-name="Layer 45" height="24" id="Layer_45" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><title/><path d="M14.12988,15.50342l-1.41406-1.415,1.42383-1.42285a2.02108,2.02108,0,0,0,0-2.855L9.87012,5.541a2.06778,2.06778,0,0,0-2.85547,0L5.59082,6.96436a2.02108,2.02108,0,0,0,0,2.855L4.17676,11.2334a4.02212,4.02212,0,0,1,0-5.68311L5.60059,4.127a4.01858,4.01858,0,0,1,5.68359,0l4.26953,4.26953a4.02449,4.02449,0,0,1,0,5.68359Z" style="fill:#4c9ae8"/><path d="M15.55762,20.94971a3.99349,3.99349,0,0,1-2.8418-1.17725L8.44629,15.50293a4.02449,4.02449,0,0,1,0-5.68359L9.87012,8.396l1.41406,1.415L9.86035,11.23389a2.02108,2.02108,0,0,0,0,2.855l4.26953,4.26953a2.06778,2.06778,0,0,0,2.85547,0l1.42383-1.42334a2.02108,2.02108,0,0,0,0-2.855L19.82324,12.666a4.02449,4.02449,0,0,1,0,5.68359l-1.42383,1.42334A3.9917,3.9917,0,0,1,15.55762,20.94971Z" style="fill:#4c9ae8"/></svg></a>
+            </div>
+        </div>
+        <div class="cyclaid">
+            <h3 class="hover-trigger">Cyclaid</h3>
+            <p class="hidden">Présentation et techno utilisées</p>
+            <div class="social-icons">
+                <a class="hidden" href="https://github.com/wissal-bot/Cyclaid-Project-2"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 128 128" id="Social_Icons" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="_x31__stroke"><g id="Github_1_"><rect clip-rule="evenodd" fill="none" fill-rule="evenodd" height="128" width="128"/><path clip-rule="evenodd" d="M63.996,1.333C28.656,1.333,0,30.099,0,65.591    c0,28.384,18.336,52.467,43.772,60.965c3.2,0.59,4.368-1.394,4.368-3.096c0-1.526-0.056-5.566-0.088-10.927    c-17.804,3.883-21.56-8.614-21.56-8.614c-2.908-7.421-7.104-9.397-7.104-9.397c-5.812-3.988,0.44-3.907,0.44-3.907    c6.42,0.454,9.8,6.622,9.8,6.622c5.712,9.819,14.98,6.984,18.628,5.337c0.58-4.152,2.236-6.984,4.064-8.59    c-14.212-1.622-29.152-7.132-29.152-31.753c0-7.016,2.492-12.75,6.588-17.244c-0.66-1.626-2.856-8.156,0.624-17.003    c0,0,5.376-1.727,17.6,6.586c5.108-1.426,10.58-2.136,16.024-2.165c5.436,0.028,10.912,0.739,16.024,2.165    c12.216-8.313,17.58-6.586,17.58-6.586c3.492,8.847,1.296,15.377,0.636,17.003c4.104,4.494,6.58,10.228,6.58,17.244    c0,24.681-14.964,30.115-29.22,31.705c2.296,1.984,4.344,5.903,4.344,11.899c0,8.59-0.08,15.517-0.08,17.626    c0,1.719,1.152,3.719,4.4,3.088C109.68,118.034,128,93.967,128,65.591C128,30.099,99.344,1.333,63.996,1.333" fill="#3E75C3" fill-rule="evenodd" id="Github"/></g></g></svg></a>
+                <a class="hidden" href="https://cyclaid.orleans-1.wilders.dev/"><?xml version="1.0" ?><svg data-name="Layer 45" height="24" id="Layer_45" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><title/><path d="M14.12988,15.50342l-1.41406-1.415,1.42383-1.42285a2.02108,2.02108,0,0,0,0-2.855L9.87012,5.541a2.06778,2.06778,0,0,0-2.85547,0L5.59082,6.96436a2.02108,2.02108,0,0,0,0,2.855L4.17676,11.2334a4.02212,4.02212,0,0,1,0-5.68311L5.60059,4.127a4.01858,4.01858,0,0,1,5.68359,0l4.26953,4.26953a4.02449,4.02449,0,0,1,0,5.68359Z" style="fill:#4c9ae8"/><path d="M15.55762,20.94971a3.99349,3.99349,0,0,1-2.8418-1.17725L8.44629,15.50293a4.02449,4.02449,0,0,1,0-5.68359L9.87012,8.396l1.41406,1.415L9.86035,11.23389a2.02108,2.02108,0,0,0,0,2.855l4.26953,4.26953a2.06778,2.06778,0,0,0,2.85547,0l1.42383-1.42334a2.02108,2.02108,0,0,0,0-2.855L19.82324,12.666a4.02449,4.02449,0,0,1,0,5.68359l-1.42383,1.42334A3.9917,3.9917,0,0,1,15.55762,20.94971Z" style="fill:#4c9ae8"/></svg></a>
+            </div>
+        </div>
+        <div class="kideau">
+            <h3 class="hover-trigger">Kideau</h3>
+        </div>
+        <div class="neoretro">
+            <h3 class="hover-trigger">Neoretro</h3>
+            <p class="hidden">Présentation et techno utilisées</p>
+            <div class="social-icons">
+                <a class="hidden" href="https://github.com/wissal-bot/php-paris-p3-neoretro"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 128 128" id="Social_Icons" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="_x31__stroke"><g id="Github_1_"><rect clip-rule="evenodd" fill="none" fill-rule="evenodd" height="128" width="128"/><path clip-rule="evenodd" d="M63.996,1.333C28.656,1.333,0,30.099,0,65.591    c0,28.384,18.336,52.467,43.772,60.965c3.2,0.59,4.368-1.394,4.368-3.096c0-1.526-0.056-5.566-0.088-10.927    c-17.804,3.883-21.56-8.614-21.56-8.614c-2.908-7.421-7.104-9.397-7.104-9.397c-5.812-3.988,0.44-3.907,0.44-3.907    c6.42,0.454,9.8,6.622,9.8,6.622c5.712,9.819,14.98,6.984,18.628,5.337c0.58-4.152,2.236-6.984,4.064-8.59    c-14.212-1.622-29.152-7.132-29.152-31.753c0-7.016,2.492-12.75,6.588-17.244c-0.66-1.626-2.856-8.156,0.624-17.003    c0,0,5.376-1.727,17.6,6.586c5.108-1.426,10.58-2.136,16.024-2.165c5.436,0.028,10.912,0.739,16.024,2.165    c12.216-8.313,17.58-6.586,17.58-6.586c3.492,8.847,1.296,15.377,0.636,17.003c4.104,4.494,6.58,10.228,6.58,17.244    c0,24.681-14.964,30.115-29.22,31.705c2.296,1.984,4.344,5.903,4.344,11.899c0,8.59-0.08,15.517-0.08,17.626    c0,1.719,1.152,3.719,4.4,3.088C109.68,118.034,128,93.967,128,65.591C128,30.099,99.344,1.333,63.996,1.333" fill="#3E75C3" fill-rule="evenodd" id="Github"/></g></g></svg></a>
+                {# <a href="https://cyclaid.orleans-1.wilders.dev/">Lien vers le site web</a> #}
+            </div>
+        </div>
+    </div>
+</section>
+<div class="overlay"></div>
+        <div class='follow-me'>
+            <h2>FOLLOW ME</h2>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/wissal-kerkour/?originalSubdomain=fr"><svg height="100px" width="100px" enable-background="new 0 0 512 512" id="Layer_1" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M1,53c2.5,0,1.7-2,1.9-3.3C5.9,29,16.6,13.9,36.6,7.4c16.1-5.2,32.9-4.6,47.9,4c9.4,5.5,16.6,14,20.4,24.5   c2.8,7.8,4.9,15.9,4,24.2c-2.1,20.9-11.5,38.3-34.5,46.4c-17.4,6-34.3,3.8-50.2-5.7c-1-3.6-3.5-5.4-7.1-6c0,0,0,0,0,0   c-0.1-1.4-0.3-2.8-2.2-2.8C7.7,84,4.3,74.3,2.9,63.8C2.7,62.6,3.2,60.9,1,61C1,58.3,1,55.7,1,53z" fill="#A7A7A7"/><path d="M276.2,216.1c4.3-2.6,6-6.4,8.2-9.5c10.9-15,24.4-26.6,41.2-34.9c23-11.3,47.4-12.5,72-10.2   c18.9,1.7,36.8,8.1,53.1,18.5c19.4,12.4,33.3,29.6,42.8,50.2c5.8,12.5,9.6,25.8,11.9,39.6c2.1,12.9,3.7,25.6,3.7,38.7   c-0.1,65-0.1,130,0.1,195c0,4.6-1.3,5.8-5.8,5.7c-30.7-0.2-61.3-0.2-92,0c-4.5,0-5.5-1.3-5.5-5.6c0.1-61.3,0.4-122.7-0.1-184   c-0.1-13.9-2-27.7-9.2-40.4c-6.4-11.2-15.3-19.2-27-23.8c-15.7-6.2-31.9-7.4-48.3-2.8c-16.6,4.6-28.1,15.5-36.3,30.3   c-4.6,8.3-6.2,17-7.5,26.3c-1.3,10-1.1,19.8-1.1,29.7c-0.2,54.7-0.2,109.3,0,164c0,5-1.2,6.4-6.3,6.3c-30.3-0.3-60.7-0.2-91,0   c-4.2,0-5.7-1.3-5.6-5.2c0.1-2.8,0.3-5.6,0.3-8.4c0-105.5,0.1-211-0.1-316.5c0-4.4,0.9-6,5.7-6c30.5,0.2,61,0.2,91.5,0   c4.1,0,5.5,1,5.4,5.3C276,190.6,276.2,202.9,276.2,216.1z" fill="#A7A7A7"/><path d="M109,176.1c0,3.5,0.1,7,0.1,10.5c0,105.3,0,210.6,0,316c0,6.4,0,6.4-6.5,6.4c-31.8,0-63.7,0-95.5,0   c-0.1-2.5-0.2-5-0.2-7.5c0-78.8,0-157.5,0-236.3c0-28.1,0.1-56.3-0.1-84.4c0-3.6,0.9-4.9,4.7-4.9C44,176.1,76.5,176,109,176.1z" fill="#A7A7A7"/><path d="M109,176.1c-32.5,0-64.9,0-97.4-0.2c-3.8,0-4.7,1.2-4.7,4.9C7,208.9,6.9,237,6.9,265.2   c0,78.8,0,157.5,0,236.3c0,2.5,0.1,5,0.2,7.5c-1.7,0.1-3-0.3-3-2.3c0-1.3,0-2.7,0-4c0-106.8,0-213.5,0-320.3c0-7.6,0.7-8.3,8.2-8.3   c30.5,0,61,0,91.4,0.1C105.5,174.1,108.2,172.7,109,176.1z" fill="#E0E0E0"/><path d="M17.1,94.9c3.6,0.6,6.1,2.4,7.1,6C21.1,99.7,18.8,97.7,17.1,94.9z" fill="#E0E0E0"/><path d="M14.9,92.1c1.9,0,2,1.4,2.2,2.8C15,95,15,93.6,14.9,92.1z" fill="#E0E0E0"/></g></svg></a>
+                <a href="https://github.com/wissal-bot"><svg height="100px" width="100px" <?xml version="1.0" ?'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 512 512" id="Layer_1" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M200,513c0-20.3,0-40.7,0-61c3.1,0.6,1.9,3.1,1.9,4.8c0.1,16.3,0.2,32.6,0,48.9c-0.1,4.1,1,5.4,5.2,5.4   c36.6-0.2,73.2-0.2,109.8,0c4.4,0,5.1-1.6,5.1-5.5c-0.2-25-0.1-49.9-0.1-74.9c0-9.3,0.2-18.6,0.2-27.9c2.8,1.2,1.6,3.8,1.6,5.7   c0.1,34.8,0.1,69.6,0.1,104.4C282.7,513,241.3,513,200,513z" fill="#D1D1D1"/><path d="M322.2,402.8c-0.1,9.3-0.2,18.6-0.2,27.9c0,25-0.1,49.9,0.1,74.9c0,3.9-0.7,5.5-5.1,5.5   c-36.6-0.2-73.2-0.2-109.8,0c-4.2,0-5.3-1.3-5.2-5.4c0.2-16.3,0.1-32.6,0-48.9c0-1.7,1.2-4.2-1.9-4.8c-9.7,0.9-19.3,3.2-29.2,2.8   c-33.5-1.3-59.5-15.4-74.7-45.8c-8.2-16.4-17.8-31.7-29.1-46c-3.1-3.9-7.9-5.5-11.5-8.7c-1.1-1-2.4-1.8-3.3-3   c-2.3-3.3-1.2-5.8,2.8-6.2c18.5-1.9,33.8,4.2,46.2,18.1c6.3,7.1,10.2,15.8,16.3,23.1c12.3,14.7,28,22.7,47,24.9   c11.5,1.3,22.4-0.9,33.3-4.2c2.2-0.6,3.1-2,3.3-4.3c0.7-10.3,2.8-20.3,6.8-29.9c1.8-4.3,4.7-7.9,6.9-12.3   c-10.3-2.6-20.7-3.4-30.5-6.4c-27.1-8.2-50.9-21.6-68.2-44.7c-8.3-11-14.1-23.3-17.4-36.5c-1.8-7.2-3.9-14.4-3.8-22   c0.1-13.3-0.5-26.7,0.3-40c0.9-16.8,3.1-33.5,9.2-49.2c3.8-9.7,9.3-18.6,17.1-25.9c2.4-2.3,3.3-4.1,1.8-7.9   c-7.4-19.7-8.1-39.8-1.8-60c0.2-0.6,0.3-1.3,0.4-2c2.2-10.3,4.5-11.3,14.3-7.4c19.2,7.5,33.3,21,45.3,37.3c3.4,4.6,2.7,6.6,10,1.9   c9.7-6.2,21-8.1,32.2-9.3c20.1-2.1,40.3-1.5,60.4-1.1c14.3,0.3,28.5,2.2,42,7.2c3.1,1.1,6,2.8,8.7,4.8c2.1,1.6,3.6,1.6,5.6-1.1   c9.1-12.8,19.5-24.4,33-32.6c6.6-4,13.4-7.7,21.4-8.6c3.3-0.4,4.7,0.7,5.6,3.3c8.3,22.9,9.5,45.7-0.2,68.5   c-1.2,2.8-0.8,4.6,1.3,6.5c16,15,21.8,34.5,24.8,55.5c2.5,17.7,3.2,35.5,2.7,53.3c-0.8,31.2-11.4,58.4-34.4,80.1   c-13.5,12.7-29.7,21.1-47.1,27.5c-12.4,4.6-25.5,5.8-38.5,9c1.3,3.1,3.7,5.4,4.3,8.5c-0.3,1.3,0.4,2,1.6,2.3   c0.1,0.6,0.3,1.1,0.4,1.7c0.3,2.1,0.1,4.3,2.5,5.4c0.5,2.2,1,4.5,1.4,6.7c-0.1,1.7-0.7,3.5,1.6,4.3c0,0.6,0.1,1.2,0.1,1.9   c-1.5,2.3-0.1,4.1,1.1,6C322.1,398.9,322.2,400.9,322.2,402.8z" fill="#A7A7A7"/><path d="M322,397c-1.1-1.9-2.6-3.7-1.1-6C322.1,392.9,323,394.8,322,397z" fill="#D1D1D1"/><path d="M317.7,378.2c-2.4-1.1-2.2-3.3-2.5-5.4C317.4,374,317.7,376,317.7,378.2z" fill="#D1D1D1"/><path d="M320.8,389.1c-2.3-0.8-1.7-2.6-1.6-4.3C321.5,385.6,321,387.5,320.8,389.1z" fill="#D1D1D1"/><path d="M314.8,371.1c-1.2-0.3-1.9-1-1.6-2.3C314.5,369.1,315.1,369.8,314.8,371.1z" fill="#D1D1D1"/></g></svg></a>
+            </div>
+        </div>
+    </div>
+</section>
+    <div class='my-presentation'>
+        <div class="meseparator"></div>
+        <h1>I’m Wissal, a <br> Web Developer</h1>
+        <p>loremipsuuuuuuuuuuuuuuuuuuuu<br>uuuuuuuuuuuuuuuuuuuuuuuuuum</p>
+        <svg height="1000px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="1000px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><line style="fill:none;stroke:#2F3435;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="111" x2="64" y1="40.5" y2="87.499"/><line style="fill:none;stroke:#2F3435;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="64" x2="17" y1="87.499" y2="40.5"/></g></svg>
+            <div class="swip-up">
+                
+    </div>
+</div>
+{% endblock %}
+
+{% block javascript %}
+    {{ encore_entry_script_tags('learn') }}
+    {{ encore_entry_script_tags('nextslide') }}
+    {{ encore_entry_script_tags('opacity') }}
+    {{ encore_entry_script_tags('slide') }}
+    {{ encore_entry_script_tags('projects') }}
+{% endblock %}

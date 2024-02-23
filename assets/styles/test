@@ -1,0 +1,76 @@
+.about {
+    display: flex;
+    justify-content:flex-end;
+}
+h1, h2 {
+    color: E0D8B0;
+}
+h2 {
+    font-size: 24px;
+}
+p {
+    font-size: 20px;
+}
+h1 {
+    font-size: 64px;
+    word-wrap: break-word;
+}
+
+.custom-separator {
+    width: 100%; 
+    height: 1px;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    border-top: 3px solid rgba(255, 255, 255, 0.07);
+}
+.separator {
+    width: 25%;
+    height: 1px;
+    background-color: white;
+}
+
+.meseparator {
+    width: 40%; 
+    height: 1px;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    background-color: white;
+    border-top: 3px solid;
+}
+.me {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 33%;
+    margin-left: 70rem;
+}
+svg {
+    color: E0D8B0;
+    height: 5rem;
+    width: 5rem;
+}
+
+.svg-nav {
+    color: E0D8B0;
+    margin-top: 3rem;
+    margin-right: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.fleche-learnmore {
+    color: white;
+    width: 2rem;
+    display: flex;
+}
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+}
+my-presentation {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+}
