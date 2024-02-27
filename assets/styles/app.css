@@ -175,9 +175,10 @@ margin-right: 11rem;
     grid-template-columns: repeat(2, 1fr); /* Deux colonnes de largeur égale */
     grid-gap: 10px; /* Espacement entre les éléments */
     gap: 10rem;
-    padding: 3rem;
+    padding: 1.5rem;
     justify-content: center;
     grid-row-gap: 10px;
+    grid-column-gap: 20px;
 }
 .modal-content p {
     text-align: justify; /* Justification du texte */
@@ -273,4 +274,15 @@ h6 {
 
 h6 {
     animation: blink 1s infinite;
+}
+.social-icons-projects {
+    display: flex;
+    gap: 25px;
+    margin-left: 5rem;
+}
+.social-icons-projects a {
+    display: block;
+}
+.social-icons-projects a:first-child {
+    margin-right: 3px; /* Compensation pour l'espace entre les éléments */
 }
